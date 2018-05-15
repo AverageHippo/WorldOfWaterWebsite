@@ -3,34 +3,15 @@
     <head>
     <Title>World Of Water</Title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+            
+    </style>
     <h1 style ="background-color: blue; text-align: center;">World of Water</h1>
-        <div id = "Home" class = "tabcontent">
-        <h2>HomePage</h2>
-            <p>Meow</p>
+        <div class="topnav">
+            <a class = "active" href = "#home">Home</a>
+            <a href = "#about">About</a>
+            <a href = "#contact">Contact</a>
+            <a href = "#order" style = "background-color: aqua">Order</a>
         </div>
-        <div id = "About" class = "tabcontent">
-        <h2>OurProduct</h2>
-            <p>Describe the water</p>
-        </div>
-        <div id = "Order" class = "tabcontent">
-        <h2>Order Online!</h2>
-            <p>eventual order water procedure later</p>
-        </div>
-        <button class = "tablink" onclick="openTab('Home',this,'blue')"id = "defaultOpen">HomePage</button>
-        <script>
-            function openTab(Name, Element, Color)
-            {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++)
-                {
-                    tablinks[i].style.backgroundColor = "";
-                }
-                
-                document.getElementById(Name).style.display = "block";
-                element.style.backgroundColor = Color;
-            }
-            document.getElementById("defaultOpen").click();
-        </script>
     </head>
 </html>
