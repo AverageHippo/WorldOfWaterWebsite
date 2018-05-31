@@ -54,6 +54,23 @@
         </style>
     </head>
     <body>
+        <style>
+            .column{
+                float: left;
+                width: 20%;
+                padding: 3px;
+            }
+            .row:after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+            @media screen and (max-width: 500px){
+                .column{
+                    width: 100%;
+                }
+            }  
+        </style>
         <h1 style = "text-align: center; font-size: 50px; margin-top: 0px; margin-bottom: 23px;">Our Products</h1>
         <div id = "topBar" class = "topnav">
             <a href = "Home.html" id = "home">Home</a>
@@ -61,6 +78,28 @@
             <a href = "Products.html" id = "products" a class = "active">Products</a>
             <a href = "Order.html" id = "order">Order</a>
             <a href = "javascript:void(0);" class = "icon" OnClick = "pageSwap()"><i class = "fa fa-bars"></i></a>
+        </div>
+        <div class = "row">
+            <div class = "column">
+                <img src = "clean-clear-cold-416528.jpg" width="200px" height = 200px> <br/>
+                <h1 style = "text-align: center;">Our Water</h1>
+            </div>
+            <div class = "column">
+                <img src = "Cooler.jpg" width = 200px height = 200px><br/>
+                <h1 style = "text-align: center;">Water Coolers</h1>
+            </div>
+            <div class = "column">
+                <img src = "ROMachine.jpg" width = 200px height = 200px><br/>
+                <h1 style = "text-align: center;">Make Your Own!</h1>
+            </div>
+            <div class = "column">
+                <img src = "petDish.jpg" width = 200px height = 200px><br/>
+                <h1 style = "text-align: center;">Pet Supplies</h1>
+            </div>
+            <div class = "column">
+                <img src = "Accessorize.jpg" width = 200px height = 200 px><br/>
+                <h1 style = "text-align: center;">Accessories</h1>
+            </div>
         </div>
         <script>
             function pageSwap()
