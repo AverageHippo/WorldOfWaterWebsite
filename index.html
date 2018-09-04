@@ -8,7 +8,7 @@
             .sidehours{
                 text-align: left;
                 background-color: darkblue;
-                width: 25%;
+                width: 15%;
             }
             .topnav{
                 background-color:darkblue;
@@ -103,35 +103,42 @@
                 text-align: left;
             }
         </style>
+        <div>
+            <h1 class = "topnav" style ="background-image : url('storefront.jpg'); height: 170px; no-repeat; background-size: cover"></h1>    
+            <div class="topnav" id = "topBar">
+                <a class = "active" id = "home" a href = "index.html">Home</a>
+                <div class = "dropdown">
+                    <button class = "dropbtn"> Products
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class = "dropdown-content">
+                        <a href = "Accessories.html">Accessories</a>
+                        <a href = "Coolers.html">Coolers</a>
+                        <a href = "Water.html">Water</a> 
+                    </div>
+                </div>
+                <a href = "Order.html" id = "order">Order</a>
+                <a href = "javascript:void(0);" class = "icon" OnClick="pageSize()"><i class = "fa fa-bars"></i></a>
+            </div>
+        </div>
         </head>
         <body style = "height : 100%">
-        <h1 style ="background-image : url('storefront.jpg'); height : 164px"><br/>
-        </h1>    
-        <div class="topnav" id = "topBar">
-            <a class = "active" id = "home" a href = "index.html">Home</a>
-            <div class = "dropdown">
-                <button class = "dropbtn"> Products
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class = "dropdown-content">
-                    <a href = "Accessories.html">Accessories</a>
-                    <a href = "Coolers.html">Coolers</a>
-                    <a href = "Water.html">Water</a> 
-                </div>
-            </div>
-            <a href = "Order.html" id = "order">Order</a>
-            <a href = "javascript:void(0);" class = "icon" OnClick="pageSize()"><i class = "fa fa-bars"></i></a>
-        </div>
-        <div class = "sidehours">
-            <h1 style = "color: white">Store Hours:</h1>
-            <p style = "color: white">Mon - Fri: 9:00 - 5:30</p>
-            <p style = "color: white">Sat: 9:00 - 3:00</p>
-            <p style = "color: white">Sunday and Holidays: Closed</p>
-        </div>
+            <div class = "sidehours">
+                <h1 style = "color: white">Store Hours:</h1>
+                <p style = "color: white">Mon - Fri: 9:00 - 5:30</p>
+                <p style = "color: white">Sat: 9:00 - 3:00</p>
+                <p style = "color: white">Sunday and Holidays: Closed</p>
+            </div>       
+        </body>
         <footer style = "background-color: darkblue">
-            <p><a href = "index.html" style = "color : white">Home</a></p>
-            <p><a href = "Products.html" style = "color : white"> Products</a></p>
-            <p><a href = "Order.html" style = "color : white">Order</a></p>
+            <div>
+                <p><a href = "index.html" style = "color: white">Home</a></p>
+                <p><a href = "Products.html" style = "color: white">Products</a></p>
+                <p><a href = "Order.html" style = "color: white">Order</a></p>
+            </div>
+            <div style = "float: right">
+                <p>Store Hours: <br/> Mon - Fri: 9:00 - 5:30 <br/> Sat: 9:00 - 3:00 <br/> Sunday and Holidays: Closed</p>
+            </div>       
         </footer>
         <script>
             function pageSize()
@@ -147,5 +154,5 @@
                 }
             }
         </script>
-    </body>
+    
 </html>
